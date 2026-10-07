@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-cavity: #0a0612;
+    --surface-base: #160f26;
+    --surface-lowest: #110a21;
+    --surface-low: #1f182f;
+    --surface-card: #231c33;
+    --surface-high: #2d263e;
+    --surface-highest: #38314a;
+    --primary-gold: #f59e0b;
+    --secondary-violet: #8b5cf6;
+  }
+
+  body {
+    background-color: #160f26;
+    color: #e9ddfe;
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    overscroll-behavior: none;
+  }
+}
+
+.font-syne {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-mono-tabular {
+  font-family: 'Space Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.font-grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Facet Clip Paths */
+.facet-top-clip {
+  clip-path: polygon(0 0, 100% 0, 50% 50%);
+}
+
+.facet-right-clip {
+  clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+}
+
+.facet-bottom-clip {
+  clip-path: polygon(100% 100%, 0 100%, 50% 50%);
+}
+
+.facet-left-clip {
+  clip-path: polygon(0 0, 50% 50%, 0 100%);
+}
+
+/* Neon & Glass Radiance */
+.neon-glow-gold {
+  box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.45), 0 10px 25px -5px rgba(0, 0, 0, 0.8);
+}
+
+.neon-glow-violet {
+  box-shadow: 0 0 30px -4px rgba(139, 92, 246, 0.40), 0 8px 20px -4px rgba(0, 0, 0, 0.8);
+}
+
+.glass-card {
+  background: rgba(31, 24, 47, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(139, 92, 246, 0.18);
+}
+
+/* Hide scrollbars cleanly */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #110a21;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d263e;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #571bc1;
+}
